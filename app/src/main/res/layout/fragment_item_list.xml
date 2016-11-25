@@ -4,16 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:tint="#80FFFFFF"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/iv_sue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/animated_sue" />
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list"
         android:name="com.nbau21.animatedvectorsample.ItemListFragment"
