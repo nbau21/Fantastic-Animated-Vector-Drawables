@@ -51,7 +51,7 @@ public class ItemListFragment extends Fragment {
             }
         });
         recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(new ItemRecyclerViewAdapter(getActivity(), AnimalDirectory.ANIMALS));
+        recyclerView.setAdapter(new ItemRecyclerViewAdapter(AnimalDirectory.ANIMALS));
         return view;
     }
 }
