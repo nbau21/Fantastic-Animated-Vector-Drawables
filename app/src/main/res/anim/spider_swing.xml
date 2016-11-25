@@ -1,0 +1,19 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+
+    <translate
+        android:repeatMode="reverse"
+        android:repeatCount="infinite"
+        android:fromYDelta="80%p"
+        android:toYDelta="80%p"
+        android:duration="1500" />
+
+    <rotate
+        android:fromDegrees="5"
+        android:toDegrees="-5"
+        android:pivotX="50%"
+        android:pivotY="0%"
+        android:duration="3000"
+        android:repeatMode="reverse"
+        android:repeatCount="infinite" />
+</set>

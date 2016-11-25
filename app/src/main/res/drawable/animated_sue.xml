@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_sue">
+    <target
+        android:name="left_ear"
+        android:animation="@anim/dog_wiggle_left_ear" />
+    <target
+        android:name="right_ear"
+        android:animation="@anim/dog_wiggle_right_ear" />
+    <target
+        android:name="left_eye"
+        android:animation="@anim/dog_smile_left_eye" />
+    <target
+        android:name="right_eye"
+        android:animation="@anim/dog_smile_right_eye" />
+    <target
+        android:name="tongue"
+        android:animation="@anim/dog_show_tongue" />
+</animated-vector>
