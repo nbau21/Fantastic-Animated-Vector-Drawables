@@ -68,11 +68,14 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment = null;
 
         switch (id) {
+            case R.id.nav_viewpager:
+                fragment = ViewPagerFragment.newInstance();
+                break;
             case R.id.nav_list:
                 fragment = ItemListFragment.newInstance();
                 break;
-            case R.id.nav_viewpager:
-                fragment = ViewPagerFragment.newInstance();
+            case R.id.nav_loading:
+                fragment = LoadingScreenFragment.newInstance();
                 break;
 //            case R.id.nav_about:
 //                fragment = ViewPagerFragment.newInstance();

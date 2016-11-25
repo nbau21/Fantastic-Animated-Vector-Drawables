@@ -1,0 +1,28 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+    <objectAnimator
+        android:repeatMode="reverse"
+        android:repeatCount="infinite"
+        android:duration="1000"
+        android:propertyName="pathData"
+        android:valueFrom="m 246.73613,371.77832 c 83.33333,0 166.66667,0 250,0 0,83.33333 0,166.66667 0,250 -83.33333,0 -166.66667,0 -250,0 0,-83.33333 0,-166.66667 0,-250 z"
+        android:valueTo="m 283.75093,435.93598 c 61.99013,0 123.98027,0 185.9704,0 0,61.99013 0,123.98027 0,185.9704 -61.99013,0 -123.98027,0 -185.9704,0 0,-61.99013 0,-123.98027 0,-185.9704 z"
+        android:valueType="pathType" />
+
+    <objectAnimator
+        android:repeatMode="reverse"
+        android:repeatCount="infinite"
+        android:duration="1000"
+        android:propertyName="fillColor"
+        android:valueFrom="#2196F3"
+        android:valueTo="#43A047" />
+
+    <objectAnimator
+        android:repeatMode="reverse"
+        android:repeatCount="infinite"
+        android:duration="1000"
+        android:propertyName="strokeColor"
+        android:valueFrom="#2196F3"
+        android:valueTo="#43A047" />
+
+</set>

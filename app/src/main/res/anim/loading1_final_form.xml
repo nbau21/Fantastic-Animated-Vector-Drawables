@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:duration="1000"
+        android:propertyName="pathData"
+        android:valueFrom="m 20.18383,371.50015 c 83.33333,0 166.66667,0 250,0 0,83.33334 0,166.66667 0,250 -83.33333,0 -166.66667,0 -250,0 0,-83.33333 0,-166.66666 0,-250 z"
+        android:valueTo="m 343.47336,491.93253 c 19.23555,0 38.47111,0 57.70666,0 0,21.61651 0,43.23301 0,64.84952 -19.23555,0 -38.47111,0 -57.70666,0 0,-21.61651 0,-43.23301 0,-64.84952 z"
+        android:valueType="pathType" />
+
+    <objectAnimator
+        android:duration="500"
+        android:propertyName="fillColor"
+        android:valueTo="#F44336" />
+
+    <objectAnimator
+        android:duration="500"
+        android:propertyName="strokeColor"
+        android:valueTo="#F44336" />
+
+</set>

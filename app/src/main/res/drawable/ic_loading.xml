@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="200dp"
+    android:viewportHeight="750"
+    android:viewportWidth="750"
+    android:width="200dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:name="box1_group"
+        android:pivotX="65.0"
+        android:pivotY="580.0">
+
+        <path
+            android:name="box1"
+            android:fillAlpha="1"
+            android:fillColor="#2196F3"
+            android:pathData="m 20.18383,371.50015 c 83.33333,0 166.66667,0 250,0 0,83.33334 0,166.66667 0,250 -83.33333,0 -166.66667,0 -250,0 0,-83.33333 0,-166.66666 0,-250 z"
+            android:strokeAlpha="1"
+            android:strokeColor="#2196F3"
+            android:strokeLineCap="butt"
+            android:strokeLineJoin="miter"
+            android:strokeWidth="1" />
+
+    </group>
+
+    <group
+        android:name="box2_group"
+        android:pivotX="185.0"
+        android:pivotY="580.0">
+
+        <path
+            android:name="box2"
+            android:fillAlpha="1"
+            android:fillColor="#2196F3"
+            android:pathData="m 246.73613,371.77832 c 83.33333,0 166.66667,0 250,0 0,83.33333 0,166.66667 0,250 -83.33333,0 -166.66667,0 -250,0 0,-83.33333 0,-166.66667 0,-250 z"
+            android:strokeAlpha="1"
+            android:strokeColor="#2196F3"
+            android:strokeLineCap="butt"
+            android:strokeLineJoin="miter"
+            android:strokeWidth="1" />
+
+    </group>
+
+    <group
+        android:name="box3_group"
+        android:pivotX="315.0"
+        android:pivotY="580.0">
+
+        <path
+            android:name="box3"
+            android:fillAlpha="1"
+            android:fillColor="#2196F3"
+            android:pathData="m 474.02045,371.77829 c 83.33333,0 166.66666,0 250,0 0,83.33333 0,166.66667 0,250 -83.33334,0 -166.66667,0 -250,0 0,-83.33333 0,-166.66667 0,-250 z"
+            android:strokeAlpha="1"
+            android:strokeColor="#2196F3"
+            android:strokeLineCap="butt"
+            android:strokeLineJoin="miter"
+            android:strokeWidth="1" />
+
+    </group>
+
+</vector>
