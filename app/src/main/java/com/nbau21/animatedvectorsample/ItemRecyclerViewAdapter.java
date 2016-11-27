@@ -1,9 +1,11 @@
 package com.nbau21.animatedvectorsample;
 
+import android.graphics.drawable.Animatable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -31,6 +33,7 @@ public class ItemRecyclerViewAdapter extends RecyclerView.Adapter<ItemRecyclerVi
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                holder.updateLabel();
             }
         });
     }
@@ -42,14 +45,29 @@ public class ItemRecyclerViewAdapter extends RecyclerView.Adapter<ItemRecyclerVi
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final View mView;
+        public final ImageView mLabel;
         public final TextView mIdView;
         public final TextView mType;
+        private boolean isClicked = false;
 
         public ViewHolder(View view) {
             super(view);
             mView = view;
             mIdView = (TextView) view.findViewById(R.id.id);
+            mLabel = (ImageView) view.findViewById(R.id.iv_label);
             mType = (TextView) view.findViewById(R.id.tv_animal_type);
+        }
+
+        public void updateLabel() {
+            if (!isClicked) {
+                mLabel.setImageDrawable(mView.getContext().getResources().getDrawable(R.drawable.animated_label, null));
+                ((Animatable) mLabel.getDrawable()).start();
+                isClicked = true;
+            } else {
+                mLabel.setImageDrawable(mView.getContext().getResources().getDrawable(R.drawable.animated_label_reverse, null));
+                ((Animatable) mLabel.getDrawable()).start();
+                isClicked = false;
+            }
         }
     }
 }

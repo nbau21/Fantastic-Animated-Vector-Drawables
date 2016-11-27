@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_label">
+    <target
+        android:name="label_group"
+        android:animation="@anim/label_wiggle" />
+    <target
+        android:name="label"
+        android:animation="@anim/label_fill" />
+</animated-vector>
