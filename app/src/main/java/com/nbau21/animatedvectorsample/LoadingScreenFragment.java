@@ -25,6 +25,7 @@ public class LoadingScreenFragment extends Fragment {
     public static LoadingScreenFragment newInstance() {
         return new LoadingScreenFragment();
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

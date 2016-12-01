@@ -5,7 +5,7 @@
         android:repeatCount="infinite"
         android:duration="500"
         android:propertyName="pathData"
-        android:valueFrom="m 95.2 218.2 m -43.2 0 a 43.2 43.2 0 1 1 86.4 0 a 43.2 43.2 0 1 1 -86.4 0"
-        android:valueTo="m 95.2 219.5 m -43.2 0 a 70 0 0 1 1 86.4 0 a 70 1 0 1 1 -86.4 0"
+        android:valueFrom="M219.4,387m-92,0a92,92 0,1 1,184.1 0a92,92 0,1 1,-184.1 0"
+        android:valueTo="M219.4,387m-92,0a92,5 0,1 1,184.1 0a92,5 0,1 1,-184.1 0"
         android:valueType="pathType" />
 </set>
