@@ -2,7 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.nbau21.animatedvectorsample.LoadingScreenFragment">
+    tools:context="com.nbau21.animatedvectorsample.fragments.LoadingScreenFragment">
 
     <ImageView
         android:id="@+id/iv_loading"

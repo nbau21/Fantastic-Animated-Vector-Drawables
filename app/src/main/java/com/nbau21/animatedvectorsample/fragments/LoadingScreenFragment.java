@@ -1,4 +1,4 @@
-package com.nbau21.animatedvectorsample;
+package com.nbau21.animatedvectorsample.fragments;
 
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.nbau21.animatedvectorsample.R;
 
 public class LoadingScreenFragment extends Fragment {
 

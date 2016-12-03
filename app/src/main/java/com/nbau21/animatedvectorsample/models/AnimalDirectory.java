@@ -1,4 +1,4 @@
-package com.nbau21.animatedvectorsample;
+package com.nbau21.animatedvectorsample.models;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -38,10 +38,10 @@ public class AnimalDirectory {
     }
 
     private static Animal animalFactory(int position) {
-        if (position%2 == 0) {
-            return new Animal(position+"", "Cat");
+        if (position % 2 == 0) {
+            return new Animal(position + "", "Cat");
         } else {
-            return new Animal(position+"", "Dog");
+            return new Animal(position + "", "Dog");
         }
     }
 }

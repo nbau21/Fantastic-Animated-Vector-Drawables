@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context="com.nbau21.animatedvectorsample.AboutFragment">
+    tools:context="com.nbau21.animatedvectorsample.fragments.AboutFragment">
 
     <ImageView
         android:id="@+id/iv_dog"

@@ -12,6 +12,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.nbau21.animatedvectorsample.fragments.AboutFragment;
+import com.nbau21.animatedvectorsample.fragments.CatFragment;
+import com.nbau21.animatedvectorsample.fragments.ItemListFragment;
+import com.nbau21.animatedvectorsample.fragments.LoadingScreenFragment;
+import com.nbau21.animatedvectorsample.fragments.ViewPagerFragment;
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override

@@ -1,4 +1,4 @@
-package com.nbau21.animatedvectorsample;
+package com.nbau21.animatedvectorsample.viewpagerutils;
 
 import android.graphics.drawable.Animatable;
 import android.support.v7.widget.RecyclerView;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.nbau21.animatedvectorsample.R;
+import com.nbau21.animatedvectorsample.models.AnimalDirectory;
 
 import java.util.List;
 

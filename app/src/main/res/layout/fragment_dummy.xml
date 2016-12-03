@@ -7,7 +7,7 @@
     android:paddingEnd="@dimen/activity_vertical_margin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.nbau21.animatedvectorsample.dummy.DummyFragment">
+    tools:context="com.nbau21.animatedvectorsample.fragments.DummyFragment">
 
     <TextView
         tools:text="HELLO WORLD"

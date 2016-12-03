@@ -1,4 +1,4 @@
-package com.nbau21.animatedvectorsample;
+package com.nbau21.animatedvectorsample.fragments;
 
 import android.graphics.Color;
 import android.graphics.drawable.Animatable;
@@ -13,7 +13,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import com.nbau21.animatedvectorsample.dummy.DummyFragment;
+import com.nbau21.animatedvectorsample.R;
 
 public class ViewPagerFragment extends Fragment {
 

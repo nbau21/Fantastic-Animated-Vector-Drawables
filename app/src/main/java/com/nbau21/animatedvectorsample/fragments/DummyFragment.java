@@ -1,4 +1,4 @@
-package com.nbau21.animatedvectorsample.dummy;
+package com.nbau21.animatedvectorsample.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

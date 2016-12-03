@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        tools:context="com.nbau21.animatedvectorsample.ItemListFragment"
+        tools:context="com.nbau21.animatedvectorsample.fragments.ItemListFragment"
         tools:listitem="@layout/fragment_item"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />

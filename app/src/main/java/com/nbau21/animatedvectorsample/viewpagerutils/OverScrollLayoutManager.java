@@ -1,4 +1,4 @@
-package com.nbau21.animatedvectorsample;
+package com.nbau21.animatedvectorsample.viewpagerutils;
 
 import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
