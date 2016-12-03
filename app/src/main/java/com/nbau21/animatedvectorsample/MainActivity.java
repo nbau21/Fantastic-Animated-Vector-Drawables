@@ -1,6 +1,5 @@
 package com.nbau21.animatedvectorsample;
 
-import android.graphics.drawable.Animatable;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -12,7 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -29,9 +27,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        ImageView ivCat = (ImageView) findViewById(R.id.iv_cat);
-        ((Animatable) ivCat.getDrawable()).start();
-        
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
@@ -79,6 +74,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_loading:
                 fragment = LoadingScreenFragment.newInstance();
                 break;
+            case R.id.nav_cat:
+                fragment = CatFragment.newInstance();
             case R.id.nav_about:
                 fragment = AboutFragment.newInstance();
             break;
