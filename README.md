@@ -10,3 +10,7 @@ I will assume that listeners have basic knowledge of Android programming. There 
 
 ## Screenshots
 ![Demo 1](/screenshots/demo1.gif)
+
+![Demo 2](/screenshots/demo2.gif)
+
+![Demo 3](/screenshots/demo3.gif)
