@@ -14,12 +14,13 @@ import android.widget.TextView;
 
 import com.nbau21.animatedvectorsample.R;
 
+import java.lang.ref.WeakReference;
+
 public class LoadingScreenFragment extends Fragment {
 
-    int count;
     ImageView ivLoading;
     TextView tvLoading;
-    Button btnRestart;
+    DummyLoadingTask loadingTask;
 
     public LoadingScreenFragment() {
     }
@@ -33,20 +34,34 @@ public class LoadingScreenFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_loading_screen, container, false);
         ivLoading = (ImageView) view.findViewById(R.id.iv_loading);
-        btnRestart = (Button) view.findViewById(R.id.btn_restart);
         tvLoading = (TextView) view.findViewById(R.id.tv_loading);
-
-        btnRestart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                new DummyLoadingTask().execute(3);
-            }
-        });
-        new DummyLoadingTask().execute(5);
+        loadingTask = new DummyLoadingTask(view);
+        loadingTask.execute(5);
         return view;
     }
 
-    class DummyLoadingTask extends AsyncTask<Integer, Integer, String> {
+    @Override
+    public void onDestroy() {
+        loadingTask.cancel(true);
+        super.onDestroy();
+    }
+
+    static class DummyLoadingTask extends AsyncTask<Integer, Integer, String> {
+
+        int count;
+        ImageView ivLoading;
+        TextView tvLoading;
+
+        WeakReference<View> weakView;
+        View referencedView;
+
+        DummyLoadingTask(View view) {
+            weakView = new WeakReference<>(view);
+            referencedView = weakView.get();
+
+            ivLoading = (ImageView) referencedView.findViewById(R.id.iv_loading);
+            tvLoading = (TextView) referencedView.findViewById(R.id.tv_loading);
+        }
 
         @Override
         protected String doInBackground(Integer... params) {
@@ -63,23 +78,23 @@ public class LoadingScreenFragment extends Fragment {
 
         @Override
         protected void onPostExecute(String result) {
+            if (referencedView == null) {
+
+            }
+
             count = 0;
             tvLoading.setText("Finished!");
-            ivLoading.setImageDrawable(getResources().getDrawable(R.drawable.animated_loading_final, null));
+            ivLoading.setImageDrawable(referencedView.getContext().getDrawable(R.drawable.animated_loading_final));
             ((Animatable) ivLoading.getDrawable()).start();
-            btnRestart.setVisibility(View.VISIBLE);
-
-            for (Drawable drawable : btnRestart.getCompoundDrawables()) {
-                if (drawable instanceof Animatable) {
-                    ((Animatable) drawable).start();
-                }
-            }
         }
 
         @Override
         protected void onPreExecute() {
-            ivLoading.setImageDrawable(getResources().getDrawable(R.drawable.animated_loading, null));
-            btnRestart.setVisibility(View.INVISIBLE);
+            if (referencedView == null) {
+
+            }
+
+            ivLoading.setImageDrawable(referencedView.getContext().getDrawable(R.drawable.animated_loading));
             ((Animatable) ivLoading.getDrawable()).start();
             tvLoading.setText("Loading..");
         }
@@ -89,6 +104,4 @@ public class LoadingScreenFragment extends Fragment {
             tvLoading.setText("Loading.. " + count + " seconds passed!");
         }
     }
-
-
 }
