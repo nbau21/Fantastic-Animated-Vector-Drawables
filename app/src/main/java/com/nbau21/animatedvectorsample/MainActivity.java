@@ -76,9 +76,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_cat:
                 fragment = CatFragment.newInstance();
+                break;
             case R.id.nav_about:
                 fragment = AboutFragment.newInstance();
-            break;
+                break;
         }
 
         showFragment(fragment);
