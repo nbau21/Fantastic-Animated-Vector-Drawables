@@ -1,6 +1,8 @@
 # Fantastic Animated Vector Drawables And Where To Use Them
 This repository contains the sample project used for my [talk](https://docs.google.com/presentation/d/17WFY_MFIBkcuW1ouYcyI_haH6O7McnyTW3M_IirVMWE).
 
+![Screenshot from GDG Website](/screenshots/gdg-devfest-la-2016-noel-vector-drawables.png)
+
 ## Talk Abstract
 I'll go over the basics of vector graphics, animations you could do with native android, and where you could use them in a material app.
 
